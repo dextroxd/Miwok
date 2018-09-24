@@ -9,5 +9,8 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
+        String [] numb = new String[]{"One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten"};
+
     }
 }
+
