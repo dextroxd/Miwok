@@ -1,15 +1,15 @@
+package com.example.android.miwok;
+
 public class Word
 {
     private String Miwokwords;
     private String Englishwords;
-    public  void set_miwok_Text(String text)
+    public  Word(String text,String text1)
     {
         Miwokwords = text;
+        Englishwords = text1;
     }
-    public  void set_english_Text(String text)
-    {
-        Englishwords = text;
-    }
+
     public  String get_miwok_Text()
     {
         return (Miwokwords);
