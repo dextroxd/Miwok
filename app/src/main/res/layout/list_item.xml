@@ -4,34 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:minHeight="@dimen/list_item_height">
     <ImageView
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
         android:id = "@+id/image_view"
-        android:background="#FFF7DA"
+        android:background="@color/tan_background"
         />
 <LinearLayout
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="88dp"
+    android:layout_height="@dimen/list_item_height"
     android:id="@+id/listitem"
-    android:background="#FD8E09"
+    android:background="@color/category_numbers"
     >
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:id="@+id/Miwok"
         android:paddingLeft="16dp"
-        android:paddingTop="16dp"
+        android:gravity="bottom"
+        android:layout_weight="1"
         android:textSize="18sp"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         tools:text="Lutti"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
         android:paddingLeft="16dp"
         android:textSize="18sp"
         android:textColor="#FFFFFF"
