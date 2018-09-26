@@ -34,10 +34,11 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView tv2 = (TextView)listItemView.findViewById(R.id.English);
         tv2.setText(w.get_english_Text());
         ImageView iv = (ImageView) listItemView.findViewById(R.id.image_view);
-        iv.setImageResource(w.getResource_id());
+
         if(w.hasImage())
         {
             iv.setVisibility(View.VISIBLE);
+            iv.setImageResource(w.getResource_id());
         }
         else
         {
