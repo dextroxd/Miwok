@@ -6,7 +6,8 @@ public class Word
 {
     private String Miwokwords;
     private String Englishwords;
-    private int resource_id;
+    private int resource_id = NO_IMAGE_VALUE;
+    private static final int NO_IMAGE_VALUE = -1;
     public  Word(String text, String text1)
     {
         Miwokwords = text;
@@ -29,4 +30,7 @@ public class Word
         return Englishwords;
     }
     public  int getResource_id(){ return  resource_id;}
+    public boolean hasImage(){
+        return resource_id!=NO_IMAGE_VALUE;
+    }
 }
