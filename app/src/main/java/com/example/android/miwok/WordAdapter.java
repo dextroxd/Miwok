@@ -1,6 +1,8 @@
 package com.example.android.miwok;
 
 import android.content.Context;
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -31,8 +33,16 @@ public class WordAdapter extends ArrayAdapter<Word> {
                     R.layout.list_item, parent, false);
         }
 
-        Word w = getItem(position);
+        final Word w = getItem(position);
         View lv =  listItemView.findViewById(R.id.listitem);
+        final MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), w.getaudio());
+        lv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mediaPlayer.start();
+            }
+        });
         int colo = ContextCompat.getColor(getContext(),col);
         lv.setBackgroundColor(colo);
         TextView tv = (TextView) listItemView.findViewById(R.id.Miwok);
@@ -40,7 +50,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView tv2 = (TextView)listItemView.findViewById(R.id.English);
         tv2.setText(w.get_english_Text());
         ImageView iv = (ImageView) listItemView.findViewById(R.id.image_view);
-
         if(w.hasImage())
         {
             iv.setVisibility(View.VISIBLE);
