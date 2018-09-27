@@ -35,14 +35,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         final Word w = getItem(position);
         View lv =  listItemView.findViewById(R.id.listitem);
-        final MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), w.getaudio());
-        lv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                mediaPlayer.start();
-            }
-        });
         int colo = ContextCompat.getColor(getContext(),col);
         lv.setBackgroundColor(colo);
         TextView tv = (TextView) listItemView.findViewById(R.id.Miwok);

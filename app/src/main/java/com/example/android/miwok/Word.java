@@ -9,11 +9,11 @@ public class Word
     private int resource_id = NO_IMAGE_VALUE;
     private int audio;
     private static final int NO_IMAGE_VALUE = -1;
-    public  Word(String text, String text1)
+    public  Word(String text, String text1,int aud)
     {
         Miwokwords = text;
         Englishwords = text1;
-
+        audio = aud;
     }
     public Word(String text,String text1,int id,int aud)
     {
