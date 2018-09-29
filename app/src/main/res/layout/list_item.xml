@@ -1,45 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-
     android:minHeight="@dimen/list_item_height">
+
     <ImageView
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
-        android:id = "@+id/image_view"
+        android:id="@+id/image_view"
         android:background="@color/tan_background"
-        />
-<LinearLayout
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="@dimen/list_item_height"
-    android:id="@+id/listitem"
-    android:background="@color/category_numbers"
-    >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:id="@+id/Miwok"
-        android:paddingLeft="16dp"
-        android:gravity="bottom"
-        android:layout_weight="1"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        tools:text="Lutti"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="top"
-        android:paddingLeft="16dp"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
-        android:id="@+id/English"
-        tools:text="One"/>
+        android:layout_alignParentLeft="true" />
 
-</LinearLayout>
-</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:id="@+id/listitem"
+        android:background="@color/category_numbers"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/image_view">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/Miwok"
+            android:paddingLeft="16dp"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:text="Lutti" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:paddingLeft="16dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/English"
+            tools:text="One" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/baseline_play_arrow_white_24"
+        android:layout_marginRight="16dp" />
+</RelativeLayout>
