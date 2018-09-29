@@ -32,20 +32,24 @@
         <activity
             android:name=".NumbersActivity"
             android:label="@string/category_numbers"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".FamilyActivity"
             android:label="@string/category_family"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PhrasesActivity"
             android:label="@string/category_phrases"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ColorsActivity"
             android:label="@string/category_colors"
-            android:parentActivityName=".MainActivity"/>
-
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ColorsFragment" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".FamilyFragment" />
+        <activity android:name=".PhrasesFragment" />
+        <activity android:name=".SimpleFragmentPagerAdapter"></activity>
     </application>
 
 </manifest>
