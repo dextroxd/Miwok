@@ -17,5 +17,7 @@ Pre-requisites
 - ViewPager is used for easy navigation.
 - RecyclerView is used for memory optimisation.
 
-
+# Demo
+![Screenshot1](https://github.com/dextroxd/Miwok/blob/master/1.jpeg?raw=true)
+![Screenshot2](https://github.com/dextroxd/Miwok/blob/master/2.jpeg?raw=true)
 
