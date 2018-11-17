@@ -18,6 +18,6 @@ Pre-requisites
 - RecyclerView is used for memory optimisation.
 
 # Demo
-![Screenshot1](https://github.com/dextroxd/Miwok/blob/master/1.jpeg?raw=true)
-![Screenshot2](https://github.com/dextroxd/Miwok/blob/master/2.jpeg?raw=true)
+![Screenshot1]<img src="https://github.com/dextroxd/Miwok/blob/master/1.jpeg?raw=true" height="24" width="48">
+![Screenshot2]<img src="https://github.com/dextroxd/Miwok/blob/master/2.jpeg?raw=true" height="24" width="48">
 
